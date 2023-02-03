@@ -31,15 +31,5 @@ python3 src/optimal_centers/get_optimal_centers.py \
     --output-exam-list-path $EXAM_LIST_PATH \
     --num-processes $NUM_PROCESSES
 
-echo 'Stage 3: Run Classifier'
-python3 src/scripts/run_model.py \
-    --model-path $MODEL_PATH \
-    --data-path $EXAM_LIST_PATH \
-    --image-path $CROPPED_IMAGE_PATH \
-    --segmentation-path $SEG_PATH \
-    --output-path $OUTPUT_PATH \
-    --device-type $DEVICE_TYPE \
-    --gpu-number $GPU_NUMBER \
-    --model-index $MODEL_INDEX \
-    #--visualization-flag
+
 
